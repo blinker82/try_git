@@ -1,0 +1,30 @@
+GET GIT:
+    2  sudo apt-get install git
+
+NOW INITIALIZE GIT:
+    5  mkdir try_git
+    6  cd try_git/
+    7  git config --global aneeketp
+    8  git config --global user.name "aneeketp"
+    9  git config --global user.email "aneeket@gmail.com"
+   10  git init
+   11  touch Readme2.txt
+   12  git add .
+   13  git log
+   14  git add Readme2.txt 
+   15  git log
+   16  git commit -m "Add Readme2.txt"
+   17  git log
+   18  git config --global user.name "blinker82"
+
+LOCAL INITIALIZATION DONE:
+CREATE THAT URL IN GITHUB AND DO THE FOLLOWING:
+   19  git remote add origin https://github.com/blinker82/try_git.git
+   20  git push origin master
+ABOVE WILL FAIL BECUASE WE DID NOT GET EVERYTHING FROM THAT URL:
+SO GET IT FIRST BY PULL:
+   21  git log
+   22  git pull https://github.com/blinker82/try_git.git
+   23  git log
+NOW PUSH IT BACK:
+   24  git push origin master
